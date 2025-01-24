@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float cuboit_volume(float a, float b, float h) {
+float cuboid_volume(float a, float b, float h) {
         return(a*b*h);
 
 }
@@ -11,31 +11,53 @@ float sphere_volume(float r) {
 }
 
 
+
 int main(){
 
+
     float a, b, h;
-
-   // printf("Podaj dlugosc podstawy prostopadloscianu: ");
-   // scanf("%f", &a);
-
-   // printf("podaj szerokosc podstawy prostopadloscianu: ");
-   // scanf("%f", &b);
-
-   // printf("podaj wysokosc prostopadloscianu: ");
-   // scanf("%f", &h);
-
-   // printf("\nObietosc prostopadloscianu: &f\n", cuboid_volume(a, b, h) );
-
-   // return(0);
-
-
     float r;
+    int command;
 
-    printf("Podaj promien kuli: ");
-    scanf("%f", &r);
+while(1){
+    printf("0 - wyjscie\n");
+    printf("1 - obietosc prostopadloscianu\n");
+    printf("2 - obietosc kuli\n");
 
-    printf("\nObietosc kuli: &f\n", sphere_volume(r));
+    scanf("%1d", &command);
 
-    return (0);
 
+    if (command == 1) {
+
+        printf("Podaj dlugosc podstawy prostopadloscianu: ");
+        scanf("%f", &a);
+
+        printf("podaj szerokosc podstawy prostopadloscianu: ");
+        scanf("%f", &b);
+
+        printf("podaj wysokosc prostopadloscianu: ");
+        scanf("%f", &h);
+
+        printf("\nObietosc prostopadloscianu: %f\n", cuboid_volume(a, b, h) );
+
+
+
+    }
+
+
+    else if (command == 2){
+        printf("Podaj promien kuli: ");
+        scanf("%f", &r);
+
+        printf("\nObietosc kuli: %f\n", sphere_volume(r));
+
+
+
+}
+    else if (command == 0){
+        printf("koniec programu\n");
+
+        return (0);
+    }
+}
 }
