@@ -15,18 +15,18 @@ int main(){
 
     float a, b, h;
 
-    printf("Podaj dlugosc podstawy prostopadloscianu: ");
-    scanf("%f", &a);
+   // printf("Podaj dlugosc podstawy prostopadloscianu: ");
+   // scanf("%f", &a);
 
-    printf("podaj szerokosc podstawy prostopadloscianu: ");
-    scanf("%f", &b);
+   // printf("podaj szerokosc podstawy prostopadloscianu: ");
+   // scanf("%f", &b);
 
-    printf("podaj wysokosc prostopadloscianu: ");
-    scanf("%f", &h);
+   // printf("podaj wysokosc prostopadloscianu: ");
+   // scanf("%f", &h);
 
-    printf("\nObietosc prostopadloscianu: &f\n", cuboid_volume(a, b, h) );
+   // printf("\nObietosc prostopadloscianu: &f\n", cuboid_volume(a, b, h) );
 
-    return(0);
+   // return(0);
 
 
     float r;
